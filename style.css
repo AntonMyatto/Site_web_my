@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #E5E5E5;
+}
+
+
+h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 148%;
+}
+
+.form{
+    position: relative;
+    height: 437px;
+    width: 773px;
+    background: #EFEFEF;
+    border-radius: 5px;
+    margin-top: 160px;
+    display: flex;
+    margin: auto;
+}
+
+.form button{
+    background: #EE811C;
+    border-radius: 5px;
+    width: 130px;
+    height: 50px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    margin: auto;
+    position: absolute;
+    top: 357px;
+    right: 321px;
+    cursor: pointer;
+}
+
+#disable-select{
+ color: #666666;
+}
+
+.name-input{
+    position: absolute;
+    width: 347px;
+    height: 79px;
+    top: 30px;
+    left: 30px;
+}
+
+#name{
+    width: 347px;
+    height: 50px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 15px 15px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+}
+
+.surname-input{
+    position: absolute;
+    width: 347px;
+    height: 79px;
+    top: 30px;
+    right: 29px;
+    display: block;
+}
+
+#surname{
+    width: 347px;
+    height: 50px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 15px 15px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+}
+
+.message-input{
+    position: absolute;
+    width: 714px;
+    height: 79px;
+    top: 139px;
+    left: 30px;
+}
+
+#comment{
+    width: 714px;
+    height: 50px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    resize: none;
+    margin-top: 10px;
+    padding: 14px 16px;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+}
+
+.select-message{
+    position: absolute;
+    width: 714px;
+    height: 79px;
+    top: 248px;
+    left: 30px;
+}
+
+#select{
+    width: 714px;
+    height: 50px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 15px 15px;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+}
+
+span{
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+}
+
+
+
+/*media sreen*/
+@media (max-width: 778px) {
+    .form {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }        
+}
