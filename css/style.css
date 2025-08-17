@@ -43,7 +43,7 @@ body{
     color: #D76D77!important;
     transition: 0.3s;
 }
-.fa-bars{
+.fa-bars, .fas.fa-bars{
     color: #fff !important; 
     font-size: 25px !important;
 }
