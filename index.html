@@ -25,6 +25,7 @@
     <meta property="twitter:description" content="Full-Stack Developer Anton Tarasiuk - Web developer specializing in HTML5, CSS, JavaScript, PHP, React JS and CMS development.">
     <meta property="twitter:image" content="images/webiz-logo.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/subscribe.css">
     <link rel="shortcut icon" type="image/png" href="images/logo.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -41,9 +42,9 @@
     <!-- Navbar Menu  ---->
     <section id="nav-bar">
       <nav class="navbar navbar-expand-lg navbar-light">
-         <a class="navbar-brand" href="#">
-           <img src="images/webiz-logo.png" alt="">
-         </a>
+                   <a class="navbar-brand" href="#">
+            <span class="logo-text">FullCycleDev</span>
+          </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
              <i class="fas fa-bars"></i>
            </button>
@@ -65,7 +66,7 @@
                   <a class="nav-link" href="portfolio.html">Portfolio</a>
               </li>
             <li class="nav-item">
-                <a class="nav-link" href="ru/index.html"><img src="images/russianflag.png" style="width: 16px; height: 16px;"></a>
+                <a class="nav-link" href="ru/index.html">RU</a>
       		</li>
           </ul>
         </div>
@@ -107,11 +108,11 @@
           </div>
           <div class="col-md-4 services">
             <img src="svg/php.svg" class="service-img"   alt="">
-            <h4>PHP</h4>
+            <h4>LARAVEL</h4>
           </div>
           <div class="col-md-4 services">
             <img src="svg/atom.svg" class="service-img"   alt="">
-            <h4>REACT JS</h4>
+            <h4>VUE.JS</h4>
           </div>
           <div class="col-md-4 services">
           <img src="svg/computer-configuration.svg" class="service-img"   alt="">
@@ -128,14 +129,14 @@
         <div class="row">
           <div class="col-md-6 about">
             <h2 class="about-title">ABOUT ME</h2>
-               <p>Since beginning my journey as a freelance designer nearly 1 year ago, I've done remote work for clients, and collaborated with web developers to create web products for both business and consumer use. I'm quietly confident, naturally curious, and I am constantly working to improve my skills on the Web.</p>
+               <p>I am a Full-Stack developer with 5 years of experience. I create modern web applications for businesses and clients, constantly learning new technologies and improving my skills.</p>
               <h2 class="about-title">MY SHORT BIOGRAPHY</h2>
-              <p>My name is Anton, I'm 20. I'm live in Minsk and I'm a web developer. I'm develope websites, web applications and web service.</p>
-              <h2 class="about-title">WHERE I STUDY</h2>
-              <p>I'm a student BSU,but i get education in IT courses and experience i got in freelance.</p>
+              <p>My name is Anton, I'm 26 years old. I live in Minsk and have been working as a Full-Stack developer for 5 years. I specialize in Laravel, PHP, Vue.js and creating modern web applications.</p>
+              <h2 class="about-title">MY PATH IN IT</h2>
+              <p>I am self-taught - I gained all my knowledge independently, studying documentation, practicing on real projects and constantly developing in the field of web development.</p>
           </div>
             <div class="col-md-6">
-              <img src="svg/undraw_mobile_marketing_iqb1r.png" class="img-fluid" alt="">
+              <img src="svg/undraw_mobile_marketing_iqbr.svg" class="img-fluid" alt="">
             </div>
         </div>
       </div>
@@ -155,13 +156,15 @@
             <div class="col-md-6 footer-box">
                 <p id="contact"><b>MY LOCATION</b></p>
                 <p><i class="fas fa-map-marker-alt"></i>Belarus, Minsk, Nemiga 5</p>
-                <p><i class="fas fa-phone"></i>+375 29 719 21 78</p>
+                <p><i class="fas fa-phone"></i>+375 29 820 05 78</p>
                 <p><i class="fas fa-envelope"></i>rabdyrka@gmail.com</p>
             </div>
             <div class="col-md-6 footer-box">
                 <p><b>SUBSCRIBE NEWSLETTER</b></p>
-                <input type="email"class="form-control" placeholder="Your Email">
-                <button type="button"class="btn btn-primary" name="button">SEND</button>
+                <form id="subscribe-form">
+                    <input type="email" id="subscribe-email" class="form-control" placeholder="Your Email" required>
+                    <button type="submit" id="subscribe-btn" class="btn btn-primary">Subscribe</button>
+                </form>
 
                 <div id="social">
                     <p>Write me</p>
@@ -171,7 +174,7 @@
                </div>
                </div>
             <div class="col-md-6 ">
-              <p class="copyright">Copyright © 2019. All rights reserved </p>
+                              <p class="copyright">Copyright © <span id="current-year"></span>. All rights reserved </p>
             </div>
           </div>
           <br>
@@ -179,14 +182,14 @@
     </section>
     <!--- Smooth Scroll js ---------->
     <script type="text/javascript" src="js/smooth-scroll.js"></script>
+    <script src="js/subscribe.js"></script>
     <script>
 	    var scroll = new SmoothScroll('a[href*="#"]');
     </script>
+    <link rel="stylesheet" href="css/widgets.css">
+    <script src="js/contact-widget.js"></script>
     <script>
-            window.replainSettings = { id: 'f16a7c7f-5f5a-486c-b670-b4cfa3f794e5' };
-            (function(u){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=u;
-            var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
-            })('https://widget.replain.cc/dist/client.js');
-      </script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>

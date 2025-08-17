@@ -25,6 +25,7 @@
     <meta property="twitter:description" content="Full-Stack Developer Anton Tarasiuk - Web developer specializing in HTML5, CSS, JavaScript, PHP, React JS and CMS development.">
     <meta property="twitter:image" content="images/webiz-logo.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/subscribe.css">
     <link rel="shortcut icon" type="image/png" href="images/logo.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -40,9 +41,9 @@
     <!-- Navbar Menu  ---->
     <section id="nav-bar">
       <nav class="navbar navbar-expand-lg navbar-light">
-         <a class="navbar-brand" href="#">
-           <img src="images/webiz-logo.png" alt="">
-         </a>
+                   <a class="navbar-brand" href="#">
+            <span class="logo-text">FullCycleDev</span>
+          </a>
                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
           </button>
@@ -57,12 +58,15 @@
             <li class="nav-item">
               <a class="nav-link" href="#about">Обо мне</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Контакты</a>
+                        <li class="nav-item">
+                <a class="nav-link" href="#contact">Контакты</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../index.html"><img src="images/britishflag.png" style="width: 16px; height: 16px;"></a>
-      		</li>
+                <a class="nav-link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">ENG</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -106,13 +110,13 @@
           </div>
           <div class="col-md-4 services">
             <img src="svg/php.svg" class="service-img"   alt="">
-            <h4>PHP</h4>
-            <p>PHP - это язык программирования общего назначения, изначально разработанный для веб-разработки. Изучен мною на 50%</p>
+            <h4>LARAVEL</h4>
+            <p>Laravel - современный PHP фреймворк для веб-разработки с элегантным синтаксисом. Изучен мною на 75%</p>
           </div>
           <div class="col-md-4 services">
             <img src="svg/atom.svg" class="service-img"   alt="">
-            <h4>REACT JS</h4>
-            <p>ReactJS - Javascript библиотека для построения интерфейсов и приложений. Изучена мною на 45%</p>
+            <h4>VUE.JS</h4>
+            <p>Vue.js - прогрессивный JavaScript фреймворк для создания пользовательских интерфейсов. Изучен мною на 70%</p>
           </div>
           <div class="col-md-4 services">
           <img src="svg/computer-configuration.svg" class="service-img"   alt="">
@@ -130,11 +134,11 @@
         <div class="row">
           <div class="col-md-6 about">
                            <h2 class="about-title">Обо мне</h2>
-                <p>С начала моего пути в качестве веб-разработчика около года назад я выполнял удаленную работу для клиентов и сотрудничал с веб-разработчиками для создания веб-продуктов как для бизнеса, так и для потребителей. Я тихо уверен, естественно любопытен, и я постоянно работаю над улучшением своих навыков в веб-разработке.</p>
+                <p>Я Full-Stack разработчик с 5-летним опытом работы. Создаю современные веб-приложения для бизнеса и клиентов, постоянно изучаю новые технологии и улучшаю свои навыки.</p>
                <h2 class="about-title">Моя короткая биография</h2>
-               <p>Меня зовут Антон, мне 20 лет. Я живу в Минске и работаю веб-разработчиком. Я занимаюсь разработкой сайтов, веб-приложений и веб-сервисов.</p>
-               <h2 class="about-title">Где я учусь?</h2>
-               <p>Я учусь в БГУ, но IT-образование я получил на курсах, а первый опыт на фрилансе.</p>
+               <p>Меня зовут Антон, мне 26 лет. Я живу в Минске и уже 5 лет работаю Full-Stack разработчиком. Специализируюсь на Laravel, PHP, Vue.js и создании современных веб-приложений.</p>
+               <h2 class="about-title">Мой путь в IT</h2>
+               <p>Я самоучка - все знания получил самостоятельно, изучая документацию, практикуясь на реальных проектах и постоянно развиваясь в сфере веб-разработки.</p>
           </div>
             <div class="col-md-6">
               <img src="svg/undraw_mobile_marketing_iqbr.svg" class="img-fluid" alt="">
@@ -157,13 +161,15 @@
             <div class="col-md-6 footer-box">
                 <p id="contact"><b>Мое месторасположение</b></p>
                 <p><i class="fas fa-map-marker-alt"></i>Беларусь, Минск, Немига 5</p>
-                <p><i class="fas fa-phone"></i>+375 29 719 21 78</p>
+                <p><i class="fas fa-phone"></i>+375 29 820 05 78</p>
                 <p><i class="fas fa-envelope"></i>rabdyrka@gmail.com</p>
             </div>
             <div class="col-md-6 footer-box">
-                <p><b>SUBSCRIBE NEWSLETTER</b></p>
-                <input type="email"class="form-control" placeholder="Ваша почта">
-                <button type="button"class="btn btn-primary" name="button">ОТПРАВИТЬ</button>
+                <p><b>ПОДПИСАТЬСЯ НА РАССЫЛКУ</b></p>
+                <form id="subscribe-form">
+                    <input type="email" id="subscribe-email" class="form-control" placeholder="Ваша почта" required>
+                    <button type="submit" id="subscribe-btn" class="btn btn-primary">Подписаться</button>
+                </form>
 
                 <div id="social">
                     <p>Посмотрите</p>
@@ -173,7 +179,7 @@
                </div>
                </div>
             <div class="col-md-6 ">
-              <p class="copyright">Copyright © 2019. Все права защищены </p>
+                             <p class="copyright">Copyright © <span id="current-year"></span>. Все права защищены </p>
             </div>
           </div>
           <br>
@@ -181,14 +187,14 @@
     </section>
     <!--- Smooth Scroll js ---------->
     <script type="text/javascript" src="js/smooth-scroll.js"></script>
+    <script src="js/subscribe.js"></script>
     <script>
 	    var scroll = new SmoothScroll('a[href*="#"]');
     </script>
+    <link rel="stylesheet" href="../css/widgets.css">
+    <script src="../js/contact-widget.js"></script>
     <script>
-            window.replainSettings = { id: 'f16a7c7f-5f5a-486c-b670-b4cfa3f794e5' };
-            (function(u){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=u;
-            var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
-            })('https://widget.replain.cc/dist/client.js');
-      </script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>

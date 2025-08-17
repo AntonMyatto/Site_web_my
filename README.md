@@ -30,6 +30,10 @@ Site_web_my/
 ├── portfolio.html      # Portfolio page
 ├── ru/
 │   └── index.html     # Russian version
+├── backend/            # Backend functionality
+│   ├── subscribe.php   # Newsletter subscription handler
+│   ├── subscribe.js    # Frontend subscription logic
+│   └── subscribe.css   # Subscription form styles
 ├── css/
 │   └── style.css      # Main stylesheet
 ├── js/
@@ -45,6 +49,9 @@ Site_web_my/
 - Added comprehensive meta tags for SEO
 - Fixed broken icon classes
 - Updated titles from "Frontend Developer" to "Full-Stack Developer"
+- Added newsletter subscription functionality with backend processing
+- Created modern subscription form with email validation
+- Added HTML email templates for subscription confirmation
 - Corrected Russian text grammar and spelling
 - Improved accessibility with proper alt attributes
 

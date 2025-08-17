@@ -25,6 +25,7 @@
     <meta property="twitter:description" content="Portfolio of Full-Stack Developer Anton Tarasiuk - Web developer specializing in HTML5, CSS, JavaScript, PHP, React JS and CMS development.">
     <meta property="twitter:image" content="images/webiz-logo.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/subscribe.css">
     <link rel="shortcut icon" type="image/png" href="images/logo.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -41,7 +42,7 @@
 <section id="nav-bar">
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">
-            <img src="images/webiz-logo.png" alt="">
+            <span class="logo-text">FullCycleDev</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
@@ -61,7 +62,7 @@
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="ru/index.html"><img src="images/russianflag.png" style="width: 16px; height: 16px;"></a>
+                    <a class="nav-link" href="ru/index.html">RU</a>
                 </li>
             </ul>
         </div>
@@ -86,41 +87,59 @@
     <div class="container text-center">
         <h3 class="title text-center">Portfolio</h3>
         <div class="row text-center">
-            <div class="col-md-4 services">
-                <a href=""><img src="images/portfolio-3.png" class="service-img services-hover"   alt=""></a>
-                <h4>Bootstrap landing</h4>
+            <div class="col-md-4">
+                <div class="portfolio-item">
+                    <a href=""><img src="images/portfolio-3.png" class="service-img" alt=""></a>
+                    <h4>Bootstrap landing</h4>
+                </div>
             </div>
-            <div class="col-md-4 services">
-                <a href="#"><img src="images/portfolio-1.png" class="service-img services-hover"   alt=""></a>
-                <h4>Website on ReactJS</h4>
+            <div class="col-md-4">
+                <div class="portfolio-item">
+                    <a href="#"><img src="images/portfolio-1.png" class="service-img" alt=""></a>
+                    <h4>Laravel Website</h4>
+                </div>
             </div>
-            <div class="col-md-4 services">
-                <a href="#"><img src="images/portfolio-2.png" class="service-img services-hover"   alt=""></a>
-                <h4>JS Calculator</h4>
+            <div class="col-md-4">
+                <div class="portfolio-item">
+                    <a href="#"><img src="images/portfolio-2.png" class="service-img" alt=""></a>
+                    <h4>Vue.js Application</h4>
+                </div>
             </div>
-            <div class="col-md-4 services">
-                <a href="#"><img src="images/portfolio-3.png" class="service-img services-hover"   alt=""></a>
-                <h4>Bootstrap landing</h4>
+            <div class="col-md-4">
+                <div class="portfolio-item">
+                    <a href="#"><img src="images/portfolio-3.png" class="service-img" alt=""></a>
+                    <h4>Bootstrap landing</h4>
+                </div>
             </div>
-            <div class="col-md-4 services">
-                <a href="#"><img src="images/portfolio-1.png" class="service-img services-hover"   alt=""></a>
-                <h4>Website on ReactJS</h4>
+            <div class="col-md-4">
+                <div class="portfolio-item">
+                    <a href="#"><img src="images/portfolio-1.png" class="service-img" alt=""></a>
+                    <h4>Laravel API</h4>
+                </div>
             </div>
-            <div class="col-md-4 services">
-                <a href="#"><img src="images/portfolio-2.png" class="service-img services-hover"   alt=""></a>
-                <h4>JS Calculator</h4>
+            <div class="col-md-4">
+                <div class="portfolio-item">
+                    <a href="#"><img src="images/portfolio-2.png" class="service-img" alt=""></a>
+                    <h4>Vue.js Dashboard</h4>
+                </div>
             </div>
-            <div class="col-md-4 services">
-                <a href="#"><img src="images/portfolio-3.png" class="service-img services-hover"   alt=""></a>
-                <h4>Bootstrap landing</h4>
+            <div class="col-md-4">
+                <div class="portfolio-item">
+                    <a href="#"><img src="images/portfolio-3.png" class="service-img" alt=""></a>
+                    <h4>PHP Backend</h4>
+                </div>
             </div>
-            <div class="col-md-4 services">
-                <a href="#"><img src="images/portfolio-1.png" class="service-img services-hover"   alt=""></a>
-                <h4>Website on ReactJS</h4>
+            <div class="col-md-4">
+                <div class="portfolio-item">
+                    <a href="#"><img src="images/portfolio-1.png" class="service-img" alt=""></a>
+                    <h4>FullStack App</h4>
+                </div>
             </div>
-            <div class="col-md-4 services">
-                <a href="#"><img src="images/portfolio-2.png" class="service-img services-hover"   alt=""></a>
-                <h4>JS Calculator</h4>
+            <div class="col-md-4">
+                <div class="portfolio-item">
+                    <a href="#"><img src="images/portfolio-2.png" class="service-img" alt=""></a>
+                    <h4>Modern Web App</h4>
+                </div>
             </div>
         </div>
     </div>
@@ -131,13 +150,15 @@
             <div class="col-md-6 footer-box">
                 <p id="contact"><b>MY LOCATION</b></p>
                 <p><i class="fas fa-map-marker-alt"></i>Belarus, Minsk, Nemiga 5</p>
-                <p><i class="fas fa-phone"></i>+375 29 719 21 78</p>
+                <p><i class="fas fa-phone"></i>+375 29 820 05 78</p>
                 <p><i class="fas fa-envelope"></i>rabdyrka@gmail.com</p>
             </div>
             <div class="col-md-6 footer-box">
                 <p><b>SUBSCRIBE NEWSLETTER</b></p>
-                <input type="email"class="form-control" placeholder="Your Email">
-                <button type="button"class="btn btn-primary" name="button">SEND</button>
+                <form id="subscribe-form">
+                    <input type="email" id="subscribe-email" class="form-control" placeholder="Your Email" required>
+                    <button type="submit" id="subscribe-btn" class="btn btn-primary">Subscribe</button>
+                </form>
 
                 <div id="social">
                     <p>Write me</p>
@@ -147,21 +168,21 @@
                 </div>
             </div>
             <div class="col-md-6 ">
-                <p class="copyright">Copyright © 2019. All rights reserved </p>
+                <p class="copyright">Copyright © <span id="current-year"></span>. All rights reserved </p>
             </div>
         </div>
         <br>
     </div>
 </section>
 <script type="text/javascript" src="js/smooth-scroll.js"></script>
+    <script src="js/subscribe.js"></script>
 <script>
     var scroll = new SmoothScroll('a[href*="#"]');
 </script>
-<script>
-    window.replainSettings = { id: 'f16a7c7f-5f5a-486c-b670-b4cfa3f794e5' };
-    (function(u){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=u;
-        var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
-    })('https://widget.replain.cc/dist/client.js');
-</script>
+    <link rel="stylesheet" href="css/widgets.css">
+    <script src="js/contact-widget.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
